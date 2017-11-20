@@ -1,4 +1,4 @@
-import { Component, Injector, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 import { NavController, Content } from 'ionic-angular';
 import { Schnitzel } from '../schnitzel/schnitzel';
@@ -7,18 +7,21 @@ import { Kasknoedel } from '../kasknoedel/kasknoedel';
 import { Pizza } from '../pizza/pizza';
 import { HomePage } from '../home/home';
 
+interface HTMLElement {
+  extended?: any;
+}
 
 @Component({
   selector: 'page-scrollpage',
   templateUrl: 'scrollpage.html'
 })
+
 export class ScrollPage {
   @ViewChild(Content) content: Content;
-  @ViewChild('target') target: any;
 
   constructor(public navCtrl: NavController) {
     var page;
-    var id;
+    var text;
   }
 
   pushPage(page) {
@@ -38,12 +41,13 @@ export class ScrollPage {
       this.navCtrl.push(ScrollPage);
     }
   }
+  
+  public scrollElement(text) {
 
-  public scrollElement(id) {
-    //this.content.scrollTo(0, this.target.nativeElement.offsetTop, 500);
+    this.content.scrollTo(0, document.getElementById(text).offsetTop, 2000);
     //this.content.scrollTo(0, 400, 500);
 
-    switch (id)
+   /* switch (id)
     {
       case 'card1': this.content.scrollTo(0, 800, 1000); break;
       case 'card2': this.content.scrollTo(0, 800, 1000); break;
@@ -51,7 +55,8 @@ export class ScrollPage {
       case 'card4': this.content.scrollTo(0, 800, 1000); break;
       case 'card5': this.content.scrollTo(0, 800, 1000); break;
       default: break;
-    }
+    }*/
+
   }
 
   onLink(url: string) {
