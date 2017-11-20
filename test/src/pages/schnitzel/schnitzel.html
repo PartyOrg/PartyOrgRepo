@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Schnitzel
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card>
+      <div class="textinbild">
+        <img src="https://www.gutekueche.at/img/rezept/170/wiener-schnitzel.jpg"/>
+        <span>Schnitzel super lecker</span>
+      </div>
+    </ion-card>
+
+   <ion-card>
+     <div>
+       <a>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</a>
+     </div>
+   </ion-card>
+
+  <h1>Andere Schnitzelarten</h1>
+
+  <ion-card (click)="pushPage(1)">
+    <div class="textinbild">
+      <img src="http://www.recipetineats.com/wp-content/uploads/2017/08/Schnitzel-3-landscape.jpg" />
+      <span>Schnitzel super lecker</span>
+    </div>
+  </ion-card>
+
+  <ion-card (click)="pushPage(2)">
+    <div class="textinbild">
+      <img src="http://www.schnitzelundmehr.at/images/sum/IMG_5261.JPG" />
+      <span>Guggi le cook</span>
+    </div>
+  </ion-card>
+
+  <ion-card (click)="pushPage(3)">
+    <div class="textinbild">
+      <img src="https://news.wko.at/news/wien/Fotolia_69878286_Subscription_XXL.jpg" />
+      <span>Kasknödel</span>
+    </div>
+  </ion-card>
+
+</ion-content>
