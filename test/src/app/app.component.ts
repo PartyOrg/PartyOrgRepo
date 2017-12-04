@@ -1,5 +1,5 @@
 //import { Component, OnInit, AfterViewChecked } from '@angular/core';
-import { Component } from '@angular/core';
+import { Component, ComponentFactoryResolver, ReflectiveInjector, ViewContainerRef } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 //import { ActivatedRoute } from '@angular/router';
@@ -12,6 +12,8 @@ import { Kasknoedel } from '../pages/kasknoedel/kasknoedel';
 import { Pizza } from '../pages/pizza/pizza';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ScrollPage } from '../pages/scrollpage/scrollpage';
+import Dynamicfunctions from '../pages/dynamicrecepie/dynamicfunctions';
+import Dynamiccomponents from '../pages/dynamicrecepie/dynamiccomponents';
 
 @Component({
   templateUrl: 'app.html'

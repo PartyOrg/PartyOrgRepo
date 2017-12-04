@@ -6,6 +6,7 @@ import { Dickbutt } from '../dickbutt/dickbutt';
 import { Kasknoedel } from '../kasknoedel/kasknoedel';
 import { Pizza } from '../pizza/pizza';
 import { ScrollPage } from '../scrollpage/scrollpage';
+import Dynamicrecepie from '../dynamicrecepie/dynamicrecepie';
 
 @Component({
   selector: 'page-home',
@@ -32,6 +33,9 @@ export class HomePage {
     }
     if (page == 5) {
       this.navCtrl.push(ScrollPage);
+    }
+    if (page == 6) {
+      this.navCtrl.push(Dynamicrecepie);
     }
   }
 

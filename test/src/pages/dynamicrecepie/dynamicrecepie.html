@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Dynamic Recepie
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <button (click)="createRecepie()">Create Recepie</button>
+  </div>
+  <dynamic-component [componentData]="componentData"></dynamic-component>
+</ion-content>
